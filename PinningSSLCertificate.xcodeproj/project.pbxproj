@@ -12,9 +12,12 @@
 		6CD439BB226FA25A00C49C26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD439B9226FA25A00C49C26 /* Main.storyboard */; };
 		6CD439BD226FA25B00C49C26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD439BC226FA25B00C49C26 /* Assets.xcassets */; };
 		6CD439C0226FA25B00C49C26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD439BE226FA25B00C49C26 /* LaunchScreen.storyboard */; };
+		8AD3E79005D52EA9B302D565 /* Pods_PinningSSLCertificate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D35A94947839C3F5220DF094 /* Pods_PinningSSLCertificate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1DBB5BE23E19BEFCD83DC58E /* Pods-PinningSSLCertificate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinningSSLCertificate.release.xcconfig"; path = "Pods/Target Support Files/Pods-PinningSSLCertificate/Pods-PinningSSLCertificate.release.xcconfig"; sourceTree = "<group>"; };
+		46FA23A074A66F53238C0577 /* Pods-PinningSSLCertificate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinningSSLCertificate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinningSSLCertificate/Pods-PinningSSLCertificate.debug.xcconfig"; sourceTree = "<group>"; };
 		6CD439B2226FA25A00C49C26 /* PinningSSLCertificate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinningSSLCertificate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CD439B5226FA25A00C49C26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CD439B7226FA25A00C49C26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		6CD439BC226FA25B00C49C26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CD439BF226FA25B00C49C26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CD439C1226FA25B00C49C26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D35A94947839C3F5220DF094 /* Pods_PinningSSLCertificate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PinningSSLCertificate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD3E79005D52EA9B302D565 /* Pods_PinningSSLCertificate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		668C392AE1089A1DB678C9E1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46FA23A074A66F53238C0577 /* Pods-PinningSSLCertificate.debug.xcconfig */,
+				1DBB5BE23E19BEFCD83DC58E /* Pods-PinningSSLCertificate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6CD439A9226FA25A00C49C26 = {
 			isa = PBXGroup;
 			children = (
 				6CD439B4226FA25A00C49C26 /* PinningSSLCertificate */,
 				6CD439B3226FA25A00C49C26 /* Products */,
+				668C392AE1089A1DB678C9E1 /* Pods */,
+				AACFDD010999F68ADCD547BC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = PinningSSLCertificate;
 			sourceTree = "<group>";
 		};
+		AACFDD010999F68ADCD547BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35A94947839C3F5220DF094 /* Pods_PinningSSLCertificate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CD439C4226FA25B00C49C26 /* Build configuration list for PBXNativeTarget "PinningSSLCertificate" */;
 			buildPhases = (
+				BE69F1760F74E436CA79F0D1 /* [CP] Check Pods Manifest.lock */,
 				6CD439AE226FA25A00C49C26 /* Sources */,
 				6CD439AF226FA25A00C49C26 /* Frameworks */,
 				6CD439B0226FA25A00C49C26 /* Resources */,
+				759A153D48D78BAEC12924D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		759A153D48D78BAEC12924D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PinningSSLCertificate/Pods-PinningSSLCertificate-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinningSSLCertificate/Pods-PinningSSLCertificate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE69F1760F74E436CA79F0D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PinningSSLCertificate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6CD439AE226FA25A00C49C26 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		6CD439C5226FA25B00C49C26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46FA23A074A66F53238C0577 /* Pods-PinningSSLCertificate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		6CD439C6226FA25B00C49C26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DBB5BE23E19BEFCD83DC58E /* Pods-PinningSSLCertificate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
